@@ -21,7 +21,7 @@ const config = {
         extend: {
             colors: {
                 'brand-background': '#FBFff6EE',
-                'brand-primary': '#3A4D39',
+                'brand-primary': '#5C4033',
                 'brand-accent': '#D3738D',
                 'brand-soft': '#F9EAE1',
             },

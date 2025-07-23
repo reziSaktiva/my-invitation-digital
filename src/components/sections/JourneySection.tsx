@@ -7,25 +7,44 @@ import SectionTitle from '../SectionTitle';
 
 const journeyData = [
     {
-        date: '12 Juni 2020',
-        title: 'Awal Mula Kisah Cinta',
-        description:
-            'Pada suatu senja yang tenang, di tengah keramaian sebuah kafe kecil yang nyaman, takdir mempertemukan kami. Secangkir kopi menjadi saksi bisu awal dari sebuah cerita, di mana dua hati mulai merasakan getaran yang sama. Dari obrolan ringan, kami menemukan kesamaan yang tak terduga, seolah semesta telah merancang pertemuan ini jauh sebelum kami menyadarinya.',
-        image: '/images/gallery-8.jpeg',
+        date: 'Chapter 1',
+        title: 'The Day I Noticed You',
+        description: `Semua berawal pada tahun 2015, pada saat turnamen bulutangkis di Batam: Banda Baru Open. Saat itu, dia (sang gadis)  sedang pemanasan di lapangan, bersiap untuk bertanding di partai final. Aku hanya bisa memperhatikan dari kejauhan, karena memang sejak pertama melihat, aku sudah tertarik. Tapi waktu itu, aku tidak berani mendekat. Rasanya seperti tidak ada gunanya—cukup mengagumi diam-diam saja.
+
+Tahun 2021, aku berbincang dengan salah satu temanku dan tanpa sengaja menceritakan momen itu. Ternyata, dunia memang sempit—dia adalah teman kuliah temanku! Dari situ, aku mulai mencari cara agar bisa bertemu. Aku mengajak temanku nongkrong, dan bahkan mentraktir, dengan satu syarat: temanku harus mengajak dia juga.
+
+Akhirnya, untuk pertama kalinya, kami duduk di meja yang sama. Aku gugup setengah mati. Tidak tahu harus mulai dari mana. Mungkin pertemuan pertama itu tidak meninggalkan kesan mendalam untuknya. Tapi untukku, itu adalah awal dari segalanya.
+`,
+        image: '/images/gallery-16.jpeg',
     },
     {
-        date: '24 Desember 2022',
-        title: 'Momen Lamaran',
-        description:
-            'Di bawah langit yang dihiasi bintang, dengan deburan ombak sebagai musiknya, sebuah pertanyaan tulus terucap. Momen itu bukan hanya tentang cincin yang berkilau, tapi tentang janji untuk selamanya. Di hadapan keindahan alam yang megah, kami mengikat janji untuk berjalan bersama, memulai babak baru yang penuh harapan dan cinta.',
+        date: 'Chapter 2',
+        title: 'From Rejection to a Promise',
+        description: `Tahun 2023, aku sudah sempat menyerah mengejar sang gadis—karena berkali-kali ditolak. Tapi suatu hari, saat ngopi bareng Nuna (kakak sang gadis) di dekat kantorku, dia bilang ada janji temu dengan sang gadis. Spontan aku bilang, “Aku juga mau ikut!”
+
+Aku menjemput sang gadis hari itu, dengan niat benar-benar ingin mengenal lebih jauh. Di perjalanan kami mulai ngobrol—tentang hidup, tujuan, dan mimpi. Berbeda dari sebelumnya, kali ini aku lebih santai. Mungkin karena sudah sempat ‘hopeless’, jadi bisa lebih lepas.
+
+Sejak hari itu kami semakin dekat. Sampai akhirnya, aku sempat salah paham—kupikir dia ingin kepastian, jadi aku nyatakan perasaan. Tapi justru ditolak 😅. Tapi lucunya, setelah itu kami malah makin dekat.
+
+Hingga suatu hari di bulan Agustus 2023, sang gadis bertanya,
+"Aku nggak mau kita deket terlalu lama. Kira-kira, berapa lama dari sekarang kamu bisa nikahin aku?"
+Padahal saat itu status kami belum pacaran!
+
+Tapi aku jawab dengan yakin, “Paling lama dua tahun.”
+Dan ternyata, janji itu sedang kami tepati hari ini.
+`,
         image: '/images/gallery-15.jpeg',
     },
     {
-        date: '10 Oktober 2024',
-        title: 'Hari Pernikahan',
-        description:
-            'Dan inilah kami sekarang, di ambang gerbang pernikahan. Hari di mana dua jiwa menjadi satu, di mana janji diikrarkan di hadapan Tuhan dan orang-orang terkasih. Ini adalah awal dari petualangan seumur hidup kami, sebuah perjalanan yang akan kami tempuh bersama, dengan cinta sebagai kompas dan tawa sebagai pengiring langkah.',
-        image: '/images/gallery-13.jpeg',
+        date: 'Chapter 3',
+        title: 'The Beginning of Something Unexpected',
+        description: `Setelah lika - liku panjang, di bulan April 2025, kami sepakat untuk bertemu dua keluarga, untuk melamar sang gadis. Sebuah ucapan yang diharapkan sebagai doa baik pada dua tahun lalu, Allah kabulkan hingga akhirnya kami mengambil satu langkah pasti dalam hidup ini.
+
+Sekarang, kami siap untuk melangkah ke jenjang yang lebih sakral,
+dan dengan penuh kebahagiaan, kami mengundang anda semua
+untuk hadir menjadi bagian dari hari spesial kami.
+`,
+        image: '/images/gallery-20.jpeg',
     },
 ];
 
@@ -85,7 +104,7 @@ function JourneySection() {
                 <SectionTitle
                     firstText="Our"
                     secondText="Journey"
-                    firstColor="text-[#3A4D39]"
+                    firstColor="text-[#5C4033]"
                     secondColor="text-[#D3738D]"
                 />
                 <motion.p
@@ -94,12 +113,11 @@ function JourneySection() {
                     transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: true }}
                     className={cn(
-                        'mx-auto mb-16 max-w-2xl text-center text-lg text-[#3A4D39]'
+                        'mx-auto mb-16 max-w-2xl text-center text-lg text-[#5C4033]'
                     )}
                 >
-                    Cinta adalah perjalanan yang menemukan keindahannya di setiap langkah.
-                    Berikut adalah sekelumit kisah kami, dari awal mula hingga menuju
-                    hari bahagia.
+                    Love is a journey that finds beauty in every step.
+                    Here is a glimpse of our story, from the beginning to the happy day.
                 </motion.p>
                 <div className="relative">
                     {/* Vertical line */}
@@ -146,12 +164,12 @@ function JourneySection() {
                                             </p>
                                             <h3
                                                 className={cn(
-                                                    'mb-3 text-2xl text-[#3A4D39]',
+                                                    'mb-3 text-2xl text-[#5C4033]',
                                                 )}
                                             >
                                                 {item.title}
                                             </h3>
-                                            <div className="relative mb-4 h-40 w-full overflow-hidden rounded-md">
+                                            <div className="relative mb-4 h-80 w-full overflow-hidden rounded-md">
                                                 <Image
                                                     src={item.image}
                                                     alt={item.title}
@@ -161,7 +179,7 @@ function JourneySection() {
                                             </div>
                                             <p
                                                 className={cn(
-                                                    'text-sm leading-relaxed text-[#3A4D39]/80'
+                                                    'text-sm leading-relaxed text-[#5C4033]/80'
                                                 )}
                                             >
                                                 {item.description}

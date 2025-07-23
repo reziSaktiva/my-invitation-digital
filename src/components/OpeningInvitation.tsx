@@ -20,9 +20,9 @@ interface OpeningContentProps {
 const openingContentData = {
     title: 'THE WEDDING OF',
     coupleNames: 'Rezi & Pracilia',
-    guestGreeting: 'Dear,',
+    guestGreeting: 'Dear',
     defaultGuest: 'Tamu Undangan',
-    backgroundImage: '/images/gallery-16.jpeg',
+    backgroundImage: '/images/gallery-14.jpeg',
 };
 
 
@@ -46,7 +46,7 @@ function OpeningContent({
 
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white">
                 <p className="tracking-widest">{openingContentData.title}</p>
-                <h1 className={cn('my-4 text-7xl md:text-8xl')}>
+                <h1 className='my-4 text-7xl md:text-8xl'>
                     {openingContentData.coupleNames}
                 </h1>
             </div>

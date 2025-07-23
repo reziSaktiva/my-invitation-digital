@@ -47,7 +47,7 @@ function BlessingSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-lg text-[#3A4D39] mb-8 italic"
+                        className="text-lg text-[#5C4033] mb-8 italic"
                     >
                         &ldquo;Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
                         untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan
@@ -60,7 +60,7 @@ function BlessingSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.8 }}
                         viewport={{ once: true }}
-                        className="text-lg text-[#3A4D39] font-medium"
+                        className="text-lg text-[#5C4033] font-medium"
                     >
                         ~ QS. Ar-Rum: 21 ~
                     </motion.p>

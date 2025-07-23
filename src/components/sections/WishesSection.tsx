@@ -74,7 +74,7 @@ export function WishesSection() {
                 <SectionTitle
                     firstText="Wedding"
                     secondText="Wishes"
-                    firstColor="text-[#3A4D39]"
+                    firstColor="text-[#5C4033]"
                     secondColor="text-[#D3738D]"
                 />
                 <motion.div
@@ -89,7 +89,7 @@ export function WishesSection() {
                             <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                             <Input
                                 type="text"
-                                placeholder="Nama Anda"
+                                placeholder="Your Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 className="pl-12 bg-white"
@@ -100,7 +100,7 @@ export function WishesSection() {
                         <div className="relative">
                             <MessageSquare className="absolute left-4 top-5 text-gray-400" size={20} />
                             <Textarea
-                                placeholder="Tulis ucapan dan doa Anda..."
+                                placeholder="Write your message and prayer..."
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 className="pl-12 pt-4 bg-white min-h-[120px]"
@@ -120,7 +120,7 @@ export function WishesSection() {
                 </motion.div>
 
                 <div className="mt-16 max-w-2xl mx-auto">
-                    <h3 className="text-2xl font-bold text-[#3A4D39] mb-6 text-center">
+                    <h3 className="text-2xl font-bold text-[#5C4033] mb-6 text-center">
                         {wishes.length > 0 ? `${wishes.length} Ucapan` : 'Jadilah yang pertama memberi ucapan!'}
                     </h3>
                     {isFetching ? (
@@ -138,7 +138,7 @@ export function WishesSection() {
                                     className="bg-white/50 p-6 rounded-lg shadow-md border border-white/60"
                                 >
                                     <div className="flex justify-between items-start">
-                                        <p className="font-bold text-[#3A4D39] text-lg">{wish.name}</p>
+                                        <p className="font-bold text-[#5C4033] text-lg">{wish.name}</p>
                                         <p className="text-xs text-gray-500">{wish.timestamp}</p>
                                     </div>
                                     <p className="mt-3 text-gray-700">{wish.message}</p>

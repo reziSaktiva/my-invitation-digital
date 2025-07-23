@@ -55,7 +55,7 @@ const DateSection: React.FC = () => {
             >
                 {addLeadingZeros(value)}
             </div>
-            <p className="text-lg md:text-xl font-semibold text-[#3A4D39] mt-4">{label}</p>
+            <p className="text-lg md:text-xl font-semibold text-[#5C4033] mt-4">{label}</p>
         </div>
     );
 
@@ -67,7 +67,7 @@ const DateSection: React.FC = () => {
             >
                 <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 z-0">
                     <Image
-                        src="/images/flower.png"
+                        src="/icons/flower.png"
                         alt="Flower decoration"
                         width={250}
                         height={250}
@@ -78,17 +78,17 @@ const DateSection: React.FC = () => {
                     <h2 className="text-5xl md:text-6xl text-[#D3738D] mb-4">
                         Save The Date
                     </h2>
-                    <p className="text-2xl font-semibold text-[#3A4D39] mb-12">
+                    <p className="text-2xl font-semibold text-[#5C4033] mb-12">
                         We are getting married
                     </p>
                     <div className="flex justify-center space-x-2 md:space-x-8 mb-12">
-                        <CountdownBox value={timeLeft.days} label="Hari" />
-                        <CountdownBox value={timeLeft.hours} label="Jam" />
-                        <CountdownBox value={timeLeft.minutes} label="Menit" />
-                        <CountdownBox value={timeLeft.seconds} label="Detik" />
+                        <CountdownBox value={timeLeft.days} label="Days" />
+                        <CountdownBox value={timeLeft.hours} label="Hours" />
+                        <CountdownBox value={timeLeft.minutes} label="Minutes" />
+                        <CountdownBox value={timeLeft.seconds} label="Seconds" />
                     </div>
-                    <p className="text-3xl font-semibold text-[#3A4D39]">
-                        Sabtu, 2 Agustus 2025
+                    <p className="text-3xl font-semibold text-[#5C4033]">
+                        Saturday, 02 August 2025
                     </p>
                 </div>
             </section>

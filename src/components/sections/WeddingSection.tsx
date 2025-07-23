@@ -6,20 +6,20 @@ import { cn } from '@/lib/utils';
 
 const groom = {
     name: 'Rezi',
-    fullName: 'Rezi Saktiva',
+    fullName: 'Rezi Saktiva, SE',
     parents: {
-        father: 'Bpk. Sugiarto',
-        mother: 'Ibu Sri Rahayu',
+        father: 'Bpk. H. Andripan',
+        mother: 'Ibu Hj. Heni Herlina',
     },
     photo: '/images/rezi.png',
 };
 
 const bride = {
     name: 'Pracilia',
-    fullName: 'Pracilia Aldri Pertiwi',
+    fullName: 'Pracilia Aldri Pertiwi, M.Or',
     parents: {
-        father: 'Bpk. Suryo',
-        mother: 'Ibu Wulandari',
+        father: 'Bpk. Hendry Hendarman, SE',
+        mother: 'Ibu Hj. Nunung Teti Laeli',
     },
     photo: '/images/pracilia.png',
 };
@@ -85,7 +85,7 @@ function WeddingSection() {
                     transition={{ duration: 1, delay: 0.2 }}
                     viewport={{ once: true }}
                     className={cn(
-                        'mb-12 text-2xl tracking-widest text-[#3A4D39]',
+                        'mb-12 text-2xl tracking-widest text-[#5C4033]',
                     )}
                 >
                     The Wedding Of
@@ -116,19 +116,19 @@ function WeddingSection() {
                         >
                             {weddingSectionData.groom.name}
                         </h3>
-                        <p className={cn('mt-2 text-xl text-[#3A4D39]')}>
+                        <p className={cn('mt-2 text-xl text-[#5C4033]')}>
                             {weddingSectionData.groom.fullName}
                         </p>
                         <p
                             className={cn(
-                                'mt-4 text-sm text-[#3A4D39]/80'
+                                'mt-4 text-sm text-[#5C4033]/80'
                             )}
                         >
                             Putra dari
                         </p>
                         <p
                             className={cn(
-                                'mt-1 text-base font-medium text-[#3A4D39]',
+                                'mt-1 text-base font-medium text-[#5C4033]',
                             )}
                         >
                             {weddingSectionData.groom.parents.father} & {weddingSectionData.groom.parents.mother}
@@ -142,7 +142,7 @@ function WeddingSection() {
                         transition={{ duration: 1, delay: 0.5 }}
                         viewport={{ once: true }}
                         className={cn(
-                            'my-4 text-8xl text-[#3A4D39]',
+                            'my-4 text-8xl text-[#5C4033]',
                         )}
                     >
                         &
@@ -172,19 +172,19 @@ function WeddingSection() {
                         >
                             {weddingSectionData.bride.name}
                         </h3>
-                        <p className={cn('mt-2 text-xl text-[#3A4D39]')}>
+                        <p className={cn('mt-2 text-xl text-[#5C4033]')}>
                             {weddingSectionData.bride.fullName}
                         </p>
                         <p
                             className={cn(
-                                'mt-4 text-sm text-[#3A4D39]/80'
+                                'mt-4 text-sm text-[#5C4033]/80'
                             )}
                         >
                             Putri dari
                         </p>
                         <p
                             className={cn(
-                                'mt-1 text-base font-medium text-[#3A4D39]',
+                                'mt-1 text-base font-medium text-[#5C4033]',
                             )}
                         >
                             {weddingSectionData.bride.parents.father} & {weddingSectionData.bride.parents.mother}

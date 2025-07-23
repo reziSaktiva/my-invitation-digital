@@ -27,32 +27,27 @@ type PersonData = {
 
 const giftData: Record<string, PersonData> = {
     groom: {
-        name: 'Ken',
+        name: 'Rezi',
         accounts: [
             {
                 bank: 'BCA',
-                accountNumber: '1234567890',
-                accountHolder: 'Kenwardo',
-            },
-            {
-                bank: 'Mandiri',
-                accountNumber: '0987654321',
-                accountHolder: 'Kenwardo',
+                accountNumber: '6765044611',
+                accountHolder: 'Rezi Saktiva',
             },
         ],
     },
     bride: {
-        name: 'Anabelle',
+        name: 'Pracilia',
         accounts: [
             {
-                bank: 'BRI',
-                accountNumber: '1122334455',
-                accountHolder: 'Anabelle',
+                bank: 'BCA',
+                accountNumber: '4380415556',
+                accountHolder: 'Pracilia Aldri Pertiwi',
             },
             {
-                bank: 'BNI',
-                accountNumber: '5544332211',
-                accountHolder: 'Anabelle',
+                bank: 'BJB',
+                accountNumber: '0135457531101',
+                accountHolder: 'Pracilia Aldri Pertiwi',
             },
         ],
     },
@@ -72,11 +67,11 @@ const BankSelector: React.FC<{ person: PersonData }> = ({ person }) => {
 
     return (
         <div className="bg-white/60 p-6 rounded-xl shadow-lg border border-white/70 w-full">
-            <h3 className="text-3xl text-[#3A4D39] mb-6" style={{ fontFamily: '"Great Vibes", cursive' }}>
+            <h3 className="text-3xl text-[#5C4033] mb-6" style={{ fontFamily: '"Great Vibes", cursive' }}>
                 {person.name}
             </h3>
             <Select onValueChange={(value) => setSelectedAccount(person.accounts.find(acc => acc.bank === value) || null)}>
-                <SelectTrigger className="w-full bg-white text-[#3A4D39]">
+                <SelectTrigger className="w-full bg-white text-[#5C4033]">
                     <SelectValue placeholder="Pilih Bank" />
                 </SelectTrigger>
                 <SelectContent>
@@ -96,8 +91,8 @@ const BankSelector: React.FC<{ person: PersonData }> = ({ person }) => {
                         exit={{ opacity: 0, height: 0, marginTop: 0 }}
                         className="bg-white p-4 rounded-lg shadow-inner text-left overflow-hidden"
                     >
-                        <p className="font-bold text-lg text-[#3A4D39]">{selectedAccount.accountNumber}</p>
-                        <p className="text-sm text-[#3A4D39]/70">a/n {selectedAccount.accountHolder}</p>
+                        <p className="font-bold text-lg text-[#5C4033]">{selectedAccount.accountNumber}</p>
+                        <p className="text-sm text-[#5C4033]/70">a/n {selectedAccount.accountHolder}</p>
                         <Button
                             onClick={handleCopy}
                             className="w-full mt-3 bg-[#D3738D] hover:bg-[#c5637c] text-white rounded-md transition-all duration-300"
@@ -121,7 +116,7 @@ export function GiftSection() {
                     <SectionTitle
                         firstText="Wedding"
                         secondText="Gift"
-                        firstColor="text-[#3A4D39]"
+                        firstColor="text-[#5C4033]"
                         secondColor="text-[#D3738D]"
                     />
                     <motion.p
@@ -129,9 +124,10 @@ export function GiftSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.3 }}
                         viewport={{ once: true }}
-                        className="mx-auto mt-4 max-w-2xl text-lg text-[#3A4D39]/80"
+                        className="mx-auto mt-4 max-w-2xl text-lg text-[#5C4033]/80"
                     >
-                        Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun, jika memberi adalah ungkapan tanda kasih, Anda dapat melakukannya melalui tautan berikut.
+                        Your presence is the greatest gift we could ever receive.
+                        If you wish to give, please use the link below.
                     </motion.p>
 
                     <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">

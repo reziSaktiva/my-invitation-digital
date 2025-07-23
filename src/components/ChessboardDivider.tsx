@@ -24,6 +24,7 @@ const ChessboardDivider = () => {
                         aria-hidden="true"
                         fill
                         unoptimized
+                        className='text-[#5C4033]'
                     />
                 </div>
             </div>

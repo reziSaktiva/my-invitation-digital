@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const closingData = {
-    backgroundUrl: '/images/gallery-1.jpeg',
-    greeting: 'Terima Kasih',
-    mainText: 'Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran dan doa restu, kami ucapkan terima kasih.',
+    backgroundUrl: '/images/gallery-6.jpeg',
+    greeting: 'Thank You',
+    mainText: 'It is an honor and a joy for us if you are willing to attend and give a blessing to the couple. We thank you for your presence and blessing.',
     coupleName: 'Rezi & Pracilia',
 };
 
@@ -51,6 +51,7 @@ export function ClosingSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
+                    className='flex flex-col items-center justify-center'
                 >
                     <motion.h2
                         variants={textItemVariants}
@@ -60,20 +61,20 @@ export function ClosingSection() {
                     >
                         {closingData.greeting}
                     </motion.h2>
-                    <motion.p
-                        variants={textItemVariants}
-                        className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-8"
-                    >
-                        {closingData.mainText}
-                    </motion.p>
-                    <motion.h3
-                        variants={textItemVariants}
-                        className={cn(
-                            'text-5xl md:text-6xl',
-                        )}
-                    >
-                        {closingData.coupleName}
-                    </motion.h3>
+                    <div className='pt-20'>
+                        <motion.p
+                            variants={textItemVariants}
+                            className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-8"
+                        >
+                            {closingData.mainText}
+                        </motion.p>
+                        <motion.h3
+                            variants={textItemVariants}
+                            className='text-5xl'
+                        >
+                            {closingData.coupleName}
+                        </motion.h3>
+                    </div>
                 </motion.div>
             </div>
         </section>

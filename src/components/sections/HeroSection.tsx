@@ -9,7 +9,7 @@ const heroSectionData = {
     coupleNames: 'Rezi & Pracilia',
     date: '2.08.2025',
     text: 'WE ARE GETTING MARRIED',
-    image: '/images/gallery-18.jpeg',
+    image: '/images/gallery-3.jpeg',
 };
 
 function HeroSection() {
@@ -89,7 +89,7 @@ function HeroSection() {
                     />
                 </motion.div>
 
-                <div className="text-center text-[#3A4D39]">
+                <div className="text-center text-[#5C4033]">
                     <motion.p
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}

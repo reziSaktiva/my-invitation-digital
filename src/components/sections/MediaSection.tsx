@@ -92,14 +92,14 @@ export function MediaSection() {
                 </motion.div>
                 <div className="container mx-auto px-4 relative z-10">
                     <SectionTitle
-                        firstText="Portraits"
+                        firstText="Potraits"
                         secondText="of Love"
-                        firstColor="text-[#3A4D39]"
+                        firstColor="text-[#5C4033]"
                         secondColor="text-[#D3738D]"
                     />
                     <p
                         className={cn(
-                            'mx-auto max-w-2xl text-center text-lg text-[#3A4D39] pb-3'
+                            'mx-auto max-w-2xl text-center text-lg text-[#5C4033] pb-3'
                         )}
                     >
                         {mediaSectionData.description}
