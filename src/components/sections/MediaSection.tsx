@@ -12,7 +12,7 @@ const galleryImages = Array.from({ length: 16 }, (_, i) => `https://ik.imagekit.
 
 const mediaSectionData = {
     title: 'Portraits of Love',
-    description: 'A glimpse into our cherished moments, each frame a testament to the love that has blossomed between us. These are the snapshots of our journey, the portraits of a love story written in smiles and stolen glances.',
+    description: 'Sekilas tentang momen-momen berharga kami, setiap bingkai menjadi bukti cinta yang telah bersemi di antara kami. Ini adalah potret perjalanan kami, potret kisah cinta yang ditulis dalam senyuman dan pandangan sekilas.',
     images: [...prewedImages, ...galleryImages],
     videoUrl: 'https://ik.imagekit.io/0yyvfumv6/footage/video-footage.mp4?updatedAt=1753327568458',
     videoTitle: 'Our Footage',
@@ -66,8 +66,8 @@ export function MediaSection() {
                 </motion.div>
                 <div className="container mx-auto px-4 relative z-10">
                     <SectionTitle
-                        firstText="Potraits"
-                        secondText="of Love"
+                        firstText={mediaSectionData.title.split(' ')[0]}
+                        secondText={mediaSectionData.title.split(' ').slice(1).join(' ')}
                         firstColor="text-[#5C4033]"
                         secondColor="text-[#D3738D]"
                     />

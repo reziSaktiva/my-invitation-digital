@@ -7,7 +7,7 @@ import SectionTitle from '../SectionTitle';
 
 const journeyData = [
     {
-        date: 'Chapter 1',
+        date: 'Bagian 1',
         title: 'The Day I Noticed You',
         description: `Semua berawal pada tahun 2015, pada saat turnamen bulutangkis di Batam: Banda Baru Open. Saat itu, dia (sang gadis)  sedang pemanasan di lapangan, bersiap untuk bertanding di partai final. Aku hanya bisa memperhatikan dari kejauhan, karena memang sejak pertama melihat, aku sudah tertarik. Tapi waktu itu, aku tidak berani mendekat. Rasanya seperti tidak ada gunanya—cukup mengagumi diam-diam saja.
 
@@ -18,7 +18,7 @@ Akhirnya, untuk pertama kalinya, kami duduk di meja yang sama. Aku gugup setenga
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-1.jpeg',
     },
     {
-        date: 'Chapter 2',
+        date: 'Bagian 2',
         title: 'From Rejection to a Promise',
         description: `Tahun 2023, aku sudah sempat menyerah mengejar sang gadis—karena berkali-kali ditolak. Tapi suatu hari, saat ngopi bareng Nuna (kakak sang gadis) di dekat kantorku, dia bilang ada janji temu dengan sang gadis. Spontan aku bilang, “Aku juga mau ikut!”
 
@@ -36,7 +36,7 @@ Dan ternyata, janji itu sedang kami tepati hari ini.
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-2.jpeg',
     },
     {
-        date: 'Chapter 3',
+        date: 'Bagian 3',
         title: 'The Beginning of Something Unexpected',
         description: `Setelah lika - liku panjang, di bulan April 2025, kami sepakat untuk bertemu dua keluarga, untuk melamar sang gadis. Sebuah ucapan yang diharapkan sebagai doa baik pada dua tahun lalu, Allah kabulkan hingga akhirnya kami mengambil satu langkah pasti dalam hidup ini.
 
@@ -47,6 +47,11 @@ untuk hadir menjadi bagian dari hari spesial kami.
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-3.jpeg',
     },
 ];
+
+const journeySectionData = {
+    title: 'Our Journey',
+    description: 'Perjalanan cinta adalah perjalanan yang menemukan keindahan di setiap langkah. Berikut adalah gambaran dari perjalanan kami, dari awal hingga hari spesial kami.',
+};
 
 const containerVariants: Variants = {
     hidden: {},
@@ -102,8 +107,8 @@ function JourneySection() {
 
             <div className="container mx-auto px-4">
                 <SectionTitle
-                    firstText="Our"
-                    secondText="Journey"
+                    firstText={journeySectionData.title.split(' ')[0]}
+                    secondText={journeySectionData.title.split(' ')[1]}
                     firstColor="text-[#5C4033]"
                     secondColor="text-[#D3738D]"
                 />
@@ -116,8 +121,7 @@ function JourneySection() {
                         'mx-auto mb-16 max-w-2xl text-center text-lg text-[#5C4033]'
                     )}
                 >
-                    Love is a journey that finds beauty in every step.
-                    Here is a glimpse of our story, from the beginning to the happy day.
+                    {journeySectionData.description}
                 </motion.p>
                 <div className="relative">
                     {/* Vertical line */}

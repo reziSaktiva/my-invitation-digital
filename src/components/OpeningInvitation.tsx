@@ -17,9 +17,9 @@ interface OpeningContentProps {
 }
 
 const openingContentData = {
-    title: 'THE WEDDING OF',
+    title: 'UNDANGAN PERNIKAHAN',
     coupleNames: 'Rezi & Pracilia',
-    guestGreeting: 'Dear',
+    guestGreeting: 'Kepada',
     defaultGuest: 'Tamu Undangan',
     backgroundImage: 'https://ik.imagekit.io/0yyvfumv6/prewedding/prewed-11.jpg',
 };
@@ -30,7 +30,7 @@ function OpeningContent({
     isDesktop,
 }: OpeningContentProps) {
     const searchParams = useSearchParams();
-    const guestName = searchParams.get('to') || 'Tamu Undangan';
+    const guestName = searchParams.get('to') || openingContentData.defaultGuest;
 
     return (
         <div

@@ -5,7 +5,6 @@ import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 
 const heroSectionData = {
-    title: 'THE WEDDING OF',
     coupleNames: 'Rezi & Pracilia',
     date: '2.08.2025',
     text: 'WE ARE GETTING MARRIED',
@@ -90,14 +89,6 @@ function HeroSection() {
                 </motion.div>
 
                 <div className="text-center text-[#5C4033]">
-                    <motion.p
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className={cn('mb-4 text-lg tracking-widest')}
-                    >
-                        {heroSectionData.title}
-                    </motion.p>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}

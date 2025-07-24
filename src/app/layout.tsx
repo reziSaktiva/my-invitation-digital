@@ -10,7 +10,7 @@ const luckiestGuy = Luckiest_Guy({
 
 export const metadata: Metadata = {
   title: "Rezi & Pracilia Wedding",
-  description: "You're invited! Join Rezi & Pracilia as they celebrate the beginning of their forever. Discover their love story and find all the details for their special day.",
+  description: "You're invited! Join Rezi & Pracilia on August 8, 2025, as they celebrate the beginning of their forever. Discover their love story and find all the details for their special day.",
   openGraph: {
     images: [
       {
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     alternateLocale: 'id_ID',
     type: 'website',
+    url: process.env.SITE_URL,
   },
   robots: {
     index: true,
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
     images: ['https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg'],
   },
   icons: {
-    icon: '/icons/favicon.jpg',
-    shortcut: '/icons/favicon.jpg',
-    apple: '/icons/favicon.jpg',
+    icon: '/icons/rp-logo.svg',
+    shortcut: '/icons/rp-logo.svg',
+    apple: '/icons/rp-logo.svg',
   },
   alternates: {
     canonical: process.env.SITE_URL,

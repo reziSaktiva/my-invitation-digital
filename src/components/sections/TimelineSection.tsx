@@ -8,8 +8,8 @@ import { Calendar, Clock, MapPin, HeartHandshake, PartyPopper } from 'lucide-rea
 const timelineData = [
     {
         icon: <HeartHandshake size={48} className="text-[#D3738D]" />,
-        title: 'Akad',
-        date: 'Saturday, 02 August 2025',
+        title: 'Akad Nikah',
+        date: 'Sabtu, 02 Agustus 2025',
         time: '08:00 - 10:00 WIB',
         venue: 'Gedung Keuangan Negara',
         address: 'Jl. Asia Afrika No. 114, Bandung',
@@ -17,8 +17,8 @@ const timelineData = [
     },
     {
         icon: <PartyPopper size={48} className="text-[#D3738D]" />,
-        title: 'Reception',
-        date: 'Saturday, 02 August 2025',
+        title: 'Resepsi',
+        date: 'Sabtu, 02 Agustus 2025',
         time: '11:00 - 14:00 WIB',
         venue: 'Gedung Keuangan Negara',
         address: 'Jl. Asia Afrika No. 114, Bandung',

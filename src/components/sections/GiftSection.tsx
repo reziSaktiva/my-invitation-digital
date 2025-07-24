@@ -165,7 +165,7 @@ const addressData = {
     address: 'Jl. Srimahi II No. 12, RT 05 RW 01, Kel. Ancol, Kec. Regol',
     city: 'Kota Bandung, Jawa Barat',
     phoneNumber: '+62-857-2245-6553',
-    note: 'To ensure smooth delivery, please confirm with us before sending a package. Thank you for your understanding.'
+    note: 'Untuk memastikan pengiriman berjalan lancar, silakan konfirmasi dengan kami sebelum mengirim paket. Terima kasih atas pengertiannya.'
 };
 
 const AddressCard = () => {
@@ -190,7 +190,7 @@ const AddressCard = () => {
             >
                 Send Gift
             </h3>
-            <p className="text-[#5C4033]/80 mb-6 max-w-md mx-auto">For family and friends who wish to send a gift, it can be sent to the following address.</p>
+            <p className="text-[#5C4033]/80 mb-6 max-w-md mx-auto">Untuk keluarga dan teman-teman yang ingin mengirimkan hadiah, dapat dikirim ke alamat berikut.</p>
 
             {!isVisible && (
                 <Button
@@ -252,16 +252,14 @@ export function GiftSection() {
                         viewport={{ once: true }}
                         className="mx-auto mt-4 max-w-2xl text-lg text-[#5C4033]/80"
                     >
-                        Your presence is the greatest gift we could ever receive.
-                        If you wish to give, please use the link below.
+                        Kehadiran Anda adalah hadiah terbesar yang pernah kami terima.
+                        Jika Anda ingin memberi, silakan gunakan tautan di bawah ini.
                     </motion.p>
 
-                    <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="mt-12 grid grid-cols-1 gap-8">
                         <BankSelector person={giftData.groom} />
                         <BankSelector person={giftData.bride} />
-                        <div className="md:col-span-2">
-                            <AddressCard />
-                        </div>
+                        <AddressCard />
                     </div>
                 </div>
             </section>

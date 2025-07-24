@@ -89,7 +89,7 @@ export function WishesSection() {
                             <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                             <Input
                                 type="text"
-                                placeholder="Your Name"
+                                placeholder="Nama"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 className="pl-12 bg-white"
@@ -100,7 +100,7 @@ export function WishesSection() {
                         <div className="relative">
                             <MessageSquare className="absolute left-4 top-5 text-gray-400" size={20} />
                             <Textarea
-                                placeholder="Write your message and prayer..."
+                                placeholder="Tulis pesan dan doa..."
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 className="pl-12 pt-4 bg-white min-h-[120px]"

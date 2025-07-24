@@ -9,8 +9,15 @@ interface TimeLeft {
     seconds: number;
 }
 
+const weddingDate = '2025-08-02T00:00:00';
+
 const DateSection: React.FC = () => {
-    const weddingDate = '2025-08-02T00:00:00';
+    const formattedWeddingDate = new Intl.DateTimeFormat('id-ID', {
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+    }).format(new Date(weddingDate));
 
     const calculateTimeLeft = (): TimeLeft => {
         const difference = +new Date(weddingDate) - +new Date();
@@ -74,21 +81,18 @@ const DateSection: React.FC = () => {
                         className="opacity-50 -scale-x-100"
                     />
                 </div>
-                <div className="relative container mx-auto px-4 z-10">
+                <div className="relative container mx-auto flex flex-col items-center px-4 gap-4">
                     <h2 className="text-5xl text-[#D3738D] mb-4">
                         Save The Date
                     </h2>
-                    <p className="text-2xl font-semibold text-[#5C4033] mb-12">
-                        We are getting married
-                    </p>
                     <div className="flex justify-center space-x-2 mb-12">
-                        <CountdownBox value={timeLeft.days} label="Days" />
-                        <CountdownBox value={timeLeft.hours} label="Hours" />
-                        <CountdownBox value={timeLeft.minutes} label="Minutes" />
-                        <CountdownBox value={timeLeft.seconds} label="Seconds" />
+                        <CountdownBox value={timeLeft.days} label="Hari" />
+                        <CountdownBox value={timeLeft.hours} label="Jam" />
+                        <CountdownBox value={timeLeft.minutes} label="Menit" />
+                        <CountdownBox value={timeLeft.seconds} label="Detik" />
                     </div>
                     <p className="text-3xl font-semibold text-[#5C4033]">
-                        Saturday, 02 August 2025
+                        {formattedWeddingDate}
                     </p>
                 </div>
             </section>

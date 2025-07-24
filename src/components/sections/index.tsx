@@ -9,6 +9,7 @@ import TimelineSection from "./TimelineSection";
 import { GiftSection } from "./GiftSection";
 import { WishesSection } from "./WishesSection";
 import { ClosingSection } from "./ClossingSection";
+import Footer from "../Footer";
 
 interface MainContentSectionProps {
     isOpen: boolean;
@@ -29,6 +30,7 @@ export function MainContentSection({ isOpen, isDesktop = false, onInteraction }:
             <GiftSection />
             <WishesSection />
             <ClosingSection />
+            <Footer />
         </>
     );
 

@@ -94,7 +94,7 @@ function WeddingSection() {
                         'mb-12 text-2xl tracking-widest text-[#5C4033]',
                     )}
                 >
-                    The Wedding Of
+                    The Happy Couple
                 </motion.p>
 
                 <div className="flex flex-col items-center justify-center gap-12">
