@@ -15,7 +15,7 @@ Tahun 2021, aku berbincang dengan salah satu temanku dan tanpa sengaja mencerita
 
 Akhirnya, untuk pertama kalinya, kami duduk di meja yang sama. Aku gugup setengah mati. Tidak tahu harus mulai dari mana. Mungkin pertemuan pertama itu tidak meninggalkan kesan mendalam untuknya. Tapi untukku, itu adalah awal dari segalanya.
 `,
-        image: '/images/gallery-16.jpeg',
+        image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-1.jpeg',
     },
     {
         date: 'Chapter 2',
@@ -33,7 +33,7 @@ Padahal saat itu status kami belum pacaran!
 Tapi aku jawab dengan yakin, “Paling lama dua tahun.”
 Dan ternyata, janji itu sedang kami tepati hari ini.
 `,
-        image: '/images/gallery-15.jpeg',
+        image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-2.jpeg',
     },
     {
         date: 'Chapter 3',
@@ -44,7 +44,7 @@ Sekarang, kami siap untuk melangkah ke jenjang yang lebih sakral,
 dan dengan penuh kebahagiaan, kami mengundang anda semua
 untuk hadir menjadi bagian dari hari spesial kami.
 `,
-        image: '/images/gallery-20.jpeg',
+        image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-3.jpeg',
     },
 ];
 
@@ -177,13 +177,22 @@ function JourneySection() {
                                                     objectFit="cover"
                                                 />
                                             </div>
-                                            <p
+                                            <div
                                                 className={cn(
-                                                    'text-sm leading-relaxed text-[#5C4033]/80'
+                                                    'text-sm leading-relaxed text-justify text-[#5C4033]/80'
                                                 )}
                                             >
-                                                {item.description}
-                                            </p>
+                                                {item.description
+                                                    .split('\n\n')
+                                                    .map((paragraph, index) => (
+                                                        <p
+                                                            key={index}
+                                                            className="mb-4 last:mb-0"
+                                                        >
+                                                            {paragraph.trim()}
+                                                        </p>
+                                                    ))}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

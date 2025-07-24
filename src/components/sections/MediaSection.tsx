@@ -2,50 +2,24 @@
 
 import * as React from 'react';
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-    type CarouselApi,
-} from '@/components/ui/carousel';
+import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import SectionTitle from '../SectionTitle';
 import ChessboardDivider from '../ChessboardDivider';
-import { motion } from 'framer-motion';
 
-const images = Array.from({ length: 19 }, (_, i) => `/images/gallery-${i + 1}.jpeg`);
+const prewedImages = Array.from({ length: 11 }, (_, i) => `https://ik.imagekit.io/0yyvfumv6/prewedding/prewed-${i + 1}.jpg`);
+const galleryImages = Array.from({ length: 17 }, (_, i) => `https://ik.imagekit.io/0yyvfumv6/gallery-${i + 1}.jpeg`);
 
 const mediaSectionData = {
     title: 'Portraits of Love',
     description: 'A glimpse into our cherished moments, each frame a testament to the love that has blossomed between us. These are the snapshots of our journey, the portraits of a love story written in smiles and stolen glances.',
-    images: images,
-    videoUrl: '/videos/video-footage.mp4',
+    images: [...prewedImages, ...galleryImages],
+    videoUrl: 'https://ik.imagekit.io/0yyvfumv6/footage/video-footage.mp4?updatedAt=1753327568458',
     videoTitle: 'Our Footage',
 };
 
 export function MediaSection() {
-    const [api, setApi] = React.useState<CarouselApi>();
-    const [current, setCurrent] = React.useState(0);
-
-    React.useEffect(() => {
-        if (!api) {
-            return;
-        }
-
-        const handleSelect = () => {
-            setCurrent(api.selectedScrollSnap());
-        };
-
-        handleSelect(); // Set initial value
-        api.on('select', handleSelect);
-
-        return () => {
-            api.off('select', handleSelect);
-        };
-    }, [api]);
+    const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
 
     return (
         <>
@@ -104,46 +78,51 @@ export function MediaSection() {
                     >
                         {mediaSectionData.description}
                     </p>
-                    <Carousel
-                        setApi={setApi}
-                        opts={{
-                            align: 'center',
-                            loop: true,
-                        }}
-                        className="w-full"
-                    >
-                        <CarouselContent className="-ml-4">
-                            {mediaSectionData.images.map((src, index) => (
-                                <CarouselItem
-                                    key={index}
-                                    className="basis-1/3"
+
+                    <div className="grid grid-cols-3 grid-flow-dense gap-2">
+                        {mediaSectionData.images.map((src, idx) => {
+                            const isHighlighted = (idx + 1) % 5 === 0;
+                            return (
+                                <motion.div
+                                    key={idx}
+                                    className={cn(
+                                        'relative group',
+                                        isHighlighted
+                                            ? 'col-span-2 row-span-2'
+                                            : 'col-span-1'
+                                    )}
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 0.5,
+                                        delay: idx * 0.1,
+                                    }}
+                                    onHoverStart={() => setHoveredIndex(idx)}
+                                    onHoverEnd={() => setHoveredIndex(null)}
                                 >
-                                    <div className="p-1">
-                                        <Card
-                                            className={cn(
-                                                'overflow-hidden border-4 border-white/80 shadow-lg transition-transform duration-300 ease-in-out',
-                                                index === current
-                                                    ? 'scale-125'
-                                                    : 'scale-85 opacity-50',
-                                            )}
-                                        >
-                                            <CardContent className="relative flex aspect-[3/4] items-center justify-center p-0">
-                                                <Image
-                                                    src={src}
-                                                    alt={`Love portrait ${index + 1}`}
-                                                    layout="fill"
-                                                    objectFit="cover"
-                                                    className="transition-transform duration-500 hover:scale-110"
-                                                />
-                                            </CardContent>
-                                        </Card>
-                                    </div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="ml-16 hidden sm:flex" />
-                        <CarouselNext className="mr-16 hidden sm:flex" />
-                    </Carousel>
+                                    <Image
+                                        src={src}
+                                        alt={`Love portrait ${idx + 1}`}
+                                        className="w-full h-full object-cover rounded-lg shadow-lg border-2 border-white/80 transition-transform duration-500 group-hover:scale-110"
+                                        loading="lazy"
+                                        width={500}
+                                        height={500}
+                                    />
+                                    <AnimatePresence>
+                                        {hoveredIndex === idx && (
+                                            <motion.div
+                                                className="absolute inset-0 bg-black/40 rounded-lg"
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                exit={{ opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                            ></motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </motion.div>
+                            );
+                        })}
+                    </div>
 
                     <motion.div
                         className="mt-20 text-center"

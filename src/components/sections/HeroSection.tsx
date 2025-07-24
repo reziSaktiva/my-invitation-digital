@@ -9,7 +9,7 @@ const heroSectionData = {
     coupleNames: 'Rezi & Pracilia',
     date: '2.08.2025',
     text: 'WE ARE GETTING MARRIED',
-    image: '/images/gallery-3.jpeg',
+    image: 'https://ik.imagekit.io/0yyvfumv6/gallery-3.jpeg',
 };
 
 function HeroSection() {

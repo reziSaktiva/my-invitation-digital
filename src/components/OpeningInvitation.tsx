@@ -22,7 +22,7 @@ const openingContentData = {
     coupleNames: 'Rezi & Pracilia',
     guestGreeting: 'Dear',
     defaultGuest: 'Tamu Undangan',
-    backgroundImage: '/images/gallery-14.jpeg',
+    backgroundImage: 'https://ik.imagekit.io/0yyvfumv6/prewedding/prewed-11.jpg',
 };
 
 

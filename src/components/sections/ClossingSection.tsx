@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const closingData = {
-    backgroundUrl: '/images/gallery-6.jpeg',
+    backgroundUrl: 'https://ik.imagekit.io/0yyvfumv6/gallery-6.jpeg',
     greeting: 'Thank You',
     mainText: 'It is an honor and a joy for us if you are willing to attend and give a blessing to the couple. We thank you for your presence and blessing.',
     coupleName: 'Rezi & Pracilia',
