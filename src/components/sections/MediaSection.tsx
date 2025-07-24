@@ -143,6 +143,7 @@ export function MediaSection() {
                                 autoPlay
                                 muted
                                 loop
+                                playsInline
                                 className="w-full h-full"
                             >
                                 Your browser does not support the video tag.

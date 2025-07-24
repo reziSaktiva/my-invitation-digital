@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g transform="translate(50 50) scale(1.4) translate(-50 -50)">
+    <path
+      fill="#D3738D"
+      d="M85.7,22.2C78.5,15.1,67.6,15,60.4,22L50,32.2L39.6,22C32.4,15,21.5,15.1,14.3,22.2C6.3,29.4,6.3,41.2,14.3,48.4L50,83.3l35.7-34.9C93.7,41.2,93.7,29.4,85.7,22.2z"
+    />
+    <text
+      x="50"
+      y="55"
+      dominant-baseline="middle"
+      text-anchor="middle"
+      font-family="sans-serif"
+      font-size="35"
+      font-weight="bold"
+      fill="#FFFFFF">
+      RP
+    </text>
+  </g>
+</svg> 

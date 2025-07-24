@@ -124,10 +124,9 @@ function JourneySection() {
                     <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-[#D3738D]/30"></div>
                     <motion.div
                         variants={containerVariants}
-                        initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="space-y-16"
+                        className="space-y-8"
                     >
                         {journeyData.map((item, index) => (
                             <motion.div
@@ -135,64 +134,53 @@ function JourneySection() {
                                 variants={itemVariants}
                                 className="relative flex items-center"
                             >
-                                <div
-                                    className={cn(
-                                        'flex w-full items-center',
-                                        index % 2 === 0 ? 'justify-start' : 'justify-end',
-                                    )}
-                                >
-                                    <div
-                                        className={cn(
-                                            'w-full',
-                                        )}
-                                    >
-                                        <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-lg">
-                                            <div
-                                                className={cn(
-                                                    'absolute top-4 h-4 w-4 rotate-45 transform bg-white',
-                                                    index % 2 === 0
-                                                        ? 'right-0 -translate-y-1/2 translate-x-1/2'
-                                                        : 'left-0 -translate-y-1/2 -translate-x-1/2',
-                                                )}
-                                            ></div>
-                                            <p
-                                                className={cn(
-                                                    'mb-2 text-sm font-bold tracking-widest text-[#D3738D]'
-                                                )}
-                                            >
-                                                {item.date}
-                                            </p>
-                                            <h3
-                                                className={cn(
-                                                    'mb-3 text-2xl text-[#5C4033]',
-                                                )}
-                                            >
-                                                {item.title}
-                                            </h3>
-                                            <div className="relative mb-4 h-80 w-full overflow-hidden rounded-md">
-                                                <Image
-                                                    src={item.image}
-                                                    alt={item.title}
-                                                    layout="fill"
-                                                    objectFit="cover"
-                                                />
-                                            </div>
-                                            <div
-                                                className={cn(
-                                                    'text-sm leading-relaxed text-justify text-[#5C4033]/80'
-                                                )}
-                                            >
-                                                {item.description
-                                                    .split('\n\n')
-                                                    .map((paragraph, index) => (
-                                                        <p
-                                                            key={index}
-                                                            className="mb-4 last:mb-0"
-                                                        >
-                                                            {paragraph.trim()}
-                                                        </p>
-                                                    ))}
-                                            </div>
+                                <div className="w-full">
+                                    <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-lg">
+                                        <div
+                                            className={cn(
+                                                'absolute top-4 hidden h-4 w-4 rotate-45 transform bg-white md:block',
+                                                index % 2 === 0
+                                                    ? 'right-0 -translate-y-1/2 translate-x-1/2'
+                                                    : 'left-0 -translate-y-1/2 -translate-x-1/2',
+                                            )}
+                                        ></div>
+                                        <p
+                                            className={cn(
+                                                'mb-2 text-sm font-bold tracking-widest text-[#D3738D]'
+                                            )}
+                                        >
+                                            {item.date}
+                                        </p>
+                                        <h3
+                                            className={cn(
+                                                'mb-3 text-2xl text-[#5C4033]',
+                                            )}
+                                        >
+                                            {item.title}
+                                        </h3>
+                                        <div className="relative mb-4 h-80 w-full overflow-hidden rounded-md">
+                                            <Image
+                                                src={item.image}
+                                                alt={item.title}
+                                                layout="fill"
+                                                objectFit="cover"
+                                            />
+                                        </div>
+                                        <div
+                                            className={cn(
+                                                'text-sm leading-relaxed text-justify text-[#5C4033]/80'
+                                            )}
+                                        >
+                                            {item.description
+                                                .split('\n\n')
+                                                .map((paragraph, index) => (
+                                                    <p
+                                                        key={index}
+                                                        className="mb-4 last:mb-0"
+                                                    >
+                                                        {paragraph.trim()}
+                                                    </p>
+                                                ))}
                                         </div>
                                     </div>
                                 </div>

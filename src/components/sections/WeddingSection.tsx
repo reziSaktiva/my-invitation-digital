@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { Instagram } from 'lucide-react';
+import { Button } from '../ui/button';
 
 const groom = {
     name: 'Rezi',
@@ -12,6 +14,8 @@ const groom = {
         mother: 'Ibu Hj. Heni Herlina',
     },
     photo: 'https://ik.imagekit.io/0yyvfumv6/rezi-acil/rezi.jpeg',
+    instagramUrl: 'https://www.instagram.com/rezisaktiva',
+    instagramHandle: '@rezisaktiva',
 };
 
 const bride = {
@@ -22,6 +26,8 @@ const bride = {
         mother: 'Ibu Hj. Nunung Teti Laeli',
     },
     photo: 'https://ik.imagekit.io/0yyvfumv6/rezi-acil/pracilia.jpeg',
+    instagramUrl: 'https://www.instagram.com/praciliaaldri',
+    instagramHandle: '@praciliaaldri',
 };
 
 const weddingSectionData = {
@@ -133,6 +139,12 @@ function WeddingSection() {
                         >
                             {weddingSectionData.groom.parents.father} & {weddingSectionData.groom.parents.mother}
                         </p>
+                        <a href={weddingSectionData.groom.instagramUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+                            <Button variant="outline" className="rounded-full border-[#D3738D] text-[#D3738D] hover:bg-[#D3738D] hover:text-white transition-colors duration-300">
+                                <Instagram size={16} className="mr-2" />
+                                {weddingSectionData.groom.instagramHandle}
+                            </Button>
+                        </a>
                     </motion.div>
 
                     {/* Ampersand */}
@@ -189,6 +201,12 @@ function WeddingSection() {
                         >
                             {weddingSectionData.bride.parents.father} & {weddingSectionData.bride.parents.mother}
                         </p>
+                        <a href={weddingSectionData.bride.instagramUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block">
+                            <Button variant="outline" className="rounded-full border-[#D3738D] text-[#D3738D] hover:bg-[#D3738D] hover:text-white transition-colors duration-300">
+                                <Instagram size={16} className="mr-2" />
+                                {weddingSectionData.bride.instagramHandle}
+                            </Button>
+                        </a>
                     </motion.div>
                 </div>
             </div>
