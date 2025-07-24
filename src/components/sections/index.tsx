@@ -13,9 +13,10 @@ import { ClosingSection } from "./ClossingSection";
 interface MainContentSectionProps {
     isOpen: boolean;
     isDesktop?: boolean;
+    onInteraction?: () => void;
 }
 
-export function MainContentSection({ isOpen, isDesktop = false }: MainContentSectionProps) {
+export function MainContentSection({ isOpen, isDesktop = false, onInteraction }: MainContentSectionProps) {
     const content = (
         <>
             <HeroSection />
@@ -31,9 +32,18 @@ export function MainContentSection({ isOpen, isDesktop = false }: MainContentSec
         </>
     );
 
+    const handleInteraction = () => {
+        if (!isOpen && onInteraction) {
+            onInteraction();
+        }
+    };
+
     if (isDesktop) {
         return (
-            <div className="h-full w-full bg-white relative">
+            <div
+                className="h-full w-full bg-white relative"
+                onClick={handleInteraction}
+            >
                 <div className="h-full overflow-y-auto">
                     <div className="w-full mx-auto">
                         {content}

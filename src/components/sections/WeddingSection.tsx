@@ -11,7 +11,7 @@ const groom = {
         father: 'Bpk. H. Andripan',
         mother: 'Ibu Hj. Heni Herlina',
     },
-    photo: 'https://ik.imagekit.io/0yyvfumv6/rezi.jpeg',
+    photo: 'https://ik.imagekit.io/0yyvfumv6/rezi-acil/rezi.jpeg',
 };
 
 const bride = {
@@ -21,7 +21,7 @@ const bride = {
         father: 'Bpk. Hendry Hendarman, SE',
         mother: 'Ibu Hj. Nunung Teti Laeli',
     },
-    photo: 'https://ik.imagekit.io/0yyvfumv6/pracilia.jpeg',
+    photo: 'https://ik.imagekit.io/0yyvfumv6/rezi-acil/pracilia.jpeg',
 };
 
 const weddingSectionData = {

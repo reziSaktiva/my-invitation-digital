@@ -7,6 +7,7 @@ export const MusicPlayer = ({ isInvitationOpen }: { isInvitationOpen: boolean })
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
     const hasAttemptedPlay = useRef(false);
+    const wasPlayingBeforeHidden = useRef(false);
 
     const attemptPlay = useCallback(() => {
         if (audioRef.current) {
@@ -23,11 +24,37 @@ export const MusicPlayer = ({ isInvitationOpen }: { isInvitationOpen: boolean })
         }
     }, [isInvitationOpen, attemptPlay]);
 
+    useEffect(() => {
+        const handleVisibilityChange = () => {
+            if (!audioRef.current) return;
+
+            if (document.hidden) {
+                if (isPlaying) {
+                    wasPlayingBeforeHidden.current = true;
+                    audioRef.current.pause();
+                    setIsPlaying(false);
+                }
+            } else {
+                if (wasPlayingBeforeHidden.current) {
+                    attemptPlay();
+                    wasPlayingBeforeHidden.current = false;
+                }
+            }
+        };
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
+        return () => {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+    }, [isPlaying, attemptPlay]);
+
     const togglePlay = () => {
         if (audioRef.current) {
             if (isPlaying) {
                 audioRef.current.pause();
                 setIsPlaying(false);
+                wasPlayingBeforeHidden.current = false;
             } else {
                 attemptPlay();
             }

@@ -43,7 +43,7 @@ function SectionTitle({
             className="mb-12 text-center"
         >
             <h2
-                className={cn('text-6xl text-shadow md:text-8xl')}
+                className={cn('text-6xl text-shadow')}
             >
                 <motion.span variants={spanVariants} className={cn(firstColor)}>
                     {firstText}

@@ -103,7 +103,7 @@ function HeroSection() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.5 }}
                         className={cn(
-                            'my-6 text-7xl text-[#D3738D] md:text-8xl'
+                            'my-6 text-7xl text-[#D3738D]'
                         )}
                     >
                         {heroSectionData.coupleNames}

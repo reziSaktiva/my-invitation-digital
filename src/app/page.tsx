@@ -36,6 +36,7 @@ export default function Home() {
           <MainContentSection
             isOpen={isOpen}
             isDesktop={true}
+            onInteraction={handleOpenInvitation}
           />
         </div>
       </div>

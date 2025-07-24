@@ -49,7 +49,7 @@ function TimelineSection() {
                     firstColor="text-[#5C4033]"
                     secondColor="text-[#D3738D]"
                 />
-                <div className="mt-16 grid gap-12 md:grid-cols-2">
+                <div className="mt-16 grid gap-12">
                     {timelineData.map((event, index) => (
                         <motion.div
                             key={index}

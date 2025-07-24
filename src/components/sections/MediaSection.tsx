@@ -8,7 +8,7 @@ import SectionTitle from '../SectionTitle';
 import ChessboardDivider from '../ChessboardDivider';
 
 const prewedImages = Array.from({ length: 11 }, (_, i) => `https://ik.imagekit.io/0yyvfumv6/prewedding/prewed-${i + 1}.jpg`);
-const galleryImages = Array.from({ length: 17 }, (_, i) => `https://ik.imagekit.io/0yyvfumv6/gallery-${i + 1}.jpeg`);
+const galleryImages = Array.from({ length: 16 }, (_, i) => `https://ik.imagekit.io/0yyvfumv6/gallery-${i + 1}.jpeg`);
 
 const mediaSectionData = {
     title: 'Portraits of Love',
@@ -132,7 +132,7 @@ export function MediaSection() {
                         viewport={{ once: true }}
                     >
                         <h3
-                            className="text-5xl md:text-6xl text-[#D3738D] mb-8"
+                            className="text-5xl text-[#D3738D] mb-8"
                         >
                             {mediaSectionData.videoTitle}
                         </h3>

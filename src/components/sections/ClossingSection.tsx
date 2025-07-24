@@ -56,7 +56,7 @@ export function ClosingSection() {
                     <motion.h2
                         variants={textItemVariants}
                         className={cn(
-                            'text-6xl md:text-7xl mb-6',
+                            'text-6xl mb-6',
                         )}
                     >
                         {closingData.greeting}
@@ -64,7 +64,7 @@ export function ClosingSection() {
                     <div className='pt-20'>
                         <motion.p
                             variants={textItemVariants}
-                            className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-8"
+                            className="max-w-3xl mx-auto text-lg leading-relaxed mb-8"
                         >
                             {closingData.mainText}
                         </motion.p>

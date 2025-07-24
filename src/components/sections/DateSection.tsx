@@ -51,11 +51,11 @@ const DateSection: React.FC = () => {
         <div className="text-center">
             <div
                 suppressHydrationWarning
-                className="text-5xl md:text-7xl font-bold text-white bg-[#D3738D]/80 backdrop-blur-sm p-4 rounded-lg shadow-lg w-24 h-24 md:w-32 md:h-32 flex items-center justify-center"
+                className="text-5xl font-bold text-white bg-[#D3738D]/80 backdrop-blur-sm p-4 rounded-lg shadow-lg w-24 h-24 flex items-center justify-center"
             >
                 {addLeadingZeros(value)}
             </div>
-            <p className="text-lg md:text-xl font-semibold text-[#5C4033] mt-4">{label}</p>
+            <p className="text-lg font-semibold text-[#5C4033] mt-4">{label}</p>
         </div>
     );
 
@@ -75,13 +75,13 @@ const DateSection: React.FC = () => {
                     />
                 </div>
                 <div className="relative container mx-auto px-4 z-10">
-                    <h2 className="text-5xl md:text-6xl text-[#D3738D] mb-4">
+                    <h2 className="text-5xl text-[#D3738D] mb-4">
                         Save The Date
                     </h2>
                     <p className="text-2xl font-semibold text-[#5C4033] mb-12">
                         We are getting married
                     </p>
-                    <div className="flex justify-center space-x-2 md:space-x-8 mb-12">
+                    <div className="flex justify-center space-x-2 mb-12">
                         <CountdownBox value={timeLeft.days} label="Days" />
                         <CountdownBox value={timeLeft.hours} label="Hours" />
                         <CountdownBox value={timeLeft.minutes} label="Minutes" />
