@@ -63,7 +63,8 @@ export const MusicPlayer = ({ isInvitationOpen }: { isInvitationOpen: boolean })
 
     return (
         <div className="fixed bottom-4 left-4 z-50">
-            <audio ref={audioRef} src="https://ik.imagekit.io/0yyvfumv6/music/musik.mp3" loop />
+            <audio
+                ref={audioRef} src="https://ik.imagekit.io/0yyvfumv6/music/musik.mp3?updatedAt=1753351101483" loop />
             <button
                 onClick={togglePlay}
                 className="p-2 bg-gray-800 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
