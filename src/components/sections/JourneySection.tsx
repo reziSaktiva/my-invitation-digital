@@ -9,41 +9,21 @@ const journeyData = [
     {
         date: 'Bagian 1',
         title: 'The Day I Noticed You',
-        description: `Semua berawal pada tahun 2015, pada saat turnamen bulutangkis di Batam: Banda Baru Open. Saat itu, dia (sang gadis)  sedang pemanasan di lapangan, bersiap untuk bertanding di partai final. Aku hanya bisa memperhatikan dari kejauhan, karena memang sejak pertama melihat, aku sudah tertarik. Tapi waktu itu, aku tidak berani mendekat. Rasanya seperti tidak ada gunanya—cukup mengagumi diam-diam saja.
-
-Tahun 2021, aku berbincang dengan salah satu temanku dan tanpa sengaja menceritakan momen itu. Ternyata, dunia memang sempit—dia adalah teman kuliah temanku! Dari situ, aku mulai mencari cara agar bisa bertemu. Aku mengajak temanku nongkrong, dan bahkan mentraktir, dengan satu syarat: temanku harus mengajak dia juga.
-
-Akhirnya, untuk pertama kalinya, kami duduk di meja yang sama. Aku gugup setengah mati. Tidak tahu harus mulai dari mana. Mungkin pertemuan pertama itu tidak meninggalkan kesan mendalam untuknya. Tapi untukku, itu adalah awal dari segalanya.
+        description: `Semua berawal di tahun 2015, saat turnamen bulutangkis Banda Baru Open di Batam. Dia sedang pemanasan untuk final, dan aku hanya bisa memperhatikannya dari jauh—tertarik sejak pandangan pertama, tapi tak berani mendekat. Enam tahun kemudian, aku menceritakan momen itu ke temanku, dan ternyata dia teman kuliah temanku sendiri! Aku langsung cari cara untuk bertemu, bahkan mentraktir temanku asal dia diajak juga. Untuk pertama kalinya, kami duduk di meja yang sama. Aku gugup setengah mati. Mungkin tak berarti banyak baginya, tapi bagiku, itulah awal dari segalanya.
 `,
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-1.jpeg',
     },
     {
         date: 'Bagian 2',
         title: 'From Rejection to a Promise',
-        description: `Tahun 2023, aku sudah sempat menyerah mengejar sang gadis—karena berkali-kali ditolak. Tapi suatu hari, saat ngopi bareng Nuna (kakak sang gadis) di dekat kantorku, dia bilang ada janji temu dengan sang gadis. Spontan aku bilang, “Aku juga mau ikut!”
-
-Aku menjemput sang gadis hari itu, dengan niat benar-benar ingin mengenal lebih jauh. Di perjalanan kami mulai ngobrol—tentang hidup, tujuan, dan mimpi. Berbeda dari sebelumnya, kali ini aku lebih santai. Mungkin karena sudah sempat ‘hopeless’, jadi bisa lebih lepas.
-
-Sejak hari itu kami semakin dekat. Sampai akhirnya, aku sempat salah paham—kupikir dia ingin kepastian, jadi aku nyatakan perasaan. Tapi justru ditolak 😅. Tapi lucunya, setelah itu kami malah makin dekat.
-
-Hingga suatu hari di bulan Agustus 2023, sang gadis bertanya,
-"Aku nggak mau kita deket terlalu lama. Kira-kira, berapa lama dari sekarang kamu bisa nikahin aku?"
-Padahal saat itu status kami belum pacaran!
-
-Tapi aku jawab dengan yakin, “Paling lama dua tahun.”
-Dan ternyata, janji itu sedang kami tepati hari ini.
+        description: `Tahun 2023, setelah berkali-kali ditolak, aku sempat menyerah mengejar sang gadis. Tapi saat ngopi dengan kakaknya, muncul kesempatan bertemu lagi, dan aku langsung ikut. Obrolan kami mengalir santai, dan sejak itu kami semakin dekat—meski sempat ditolak lagi saat aku nyatakan perasaan. Lucunya, justru dari situ hubungan kami makin erat. Hingga di bulan Agustus, dia bertanya, “Kapan kamu bisa nikahin aku?” Padahal kami belum pacaran! Aku jawab, “Paling lama dua tahun,” dan hari ini, janji itu sedang kami tepati.
 `,
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-2.jpeg',
     },
     {
         date: 'Bagian 3',
         title: 'The Beginning of Something Unexpected',
-        description: `Setelah lika - liku panjang, di bulan April 2025, kami sepakat untuk bertemu dua keluarga, untuk melamar sang gadis. Sebuah ucapan yang diharapkan sebagai doa baik pada dua tahun lalu, Allah kabulkan hingga akhirnya kami mengambil satu langkah pasti dalam hidup ini.
-
-Sekarang, kami siap untuk melangkah ke jenjang yang lebih sakral,
-dan dengan penuh kebahagiaan, kami mengundang anda semua
-untuk hadir menjadi bagian dari hari spesial kami.
-`,
+        description: `Setelah perjalanan panjang, pada April 2025 kami mempertemukan dua keluarga untuk melamar sang gadis—sebuah doa dua tahun lalu yang akhirnya Allah kabulkan. Kini, dengan hati yang mantap dan penuh kebahagiaan, kami siap melangkah ke jenjang yang lebih sakral, dan dengan tulus mengundang Anda semua untuk hadir di hari istimewa kami.`,
         image: 'https://ik.imagekit.io/0yyvfumv6/lamaran/lamaran-3.jpeg',
     },
 ];

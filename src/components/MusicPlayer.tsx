@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { Disc } from "lucide-react";
+import { Disc3 } from "lucide-react";
+import { motion } from "framer-motion";
 
 export const MusicPlayer = ({ isInvitationOpen }: { isInvitationOpen: boolean }) => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -68,16 +69,32 @@ export const MusicPlayer = ({ isInvitationOpen }: { isInvitationOpen: boolean })
     };
 
     return (
-        <div className="fixed bottom-4 left-4 z-50">
+        <motion.div
+            className="fixed bottom-4 left-4 z-50"
+            initial={false}
+            animate={{ scale: isPlaying ? 1.1 : 1 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
             <audio
                 ref={audioRef} src="https://ik.imagekit.io/0yyvfumv6/music/musik-2.mp3?updatedAt=1753352065466" loop />
-            <button
+            <motion.button
                 onClick={togglePlay}
-                className="p-2 bg-gray-800 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                className={`p-2 bg-gray-800 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-all duration-300 ${isPlaying ? "animate-glow" : ""}`}
                 aria-label={isPlaying ? "Pause music" : "Play music"}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
             >
-                <Disc className={`w-8 h-8 ${isPlaying ? "animate-spin-slow" : ""}`} />
-            </button>
-        </div>
+                <motion.div
+                    animate={{ rotate: isPlaying ? 360 : 0 }}
+                    transition={{
+                        repeat: isPlaying ? Infinity : 0,
+                        ease: "linear",
+                        duration: 2
+                    }}
+                >
+                    <Disc3 className="w-8 h-8" />
+                </motion.div>
+            </motion.button>
+        </motion.div>
     );
 }; 

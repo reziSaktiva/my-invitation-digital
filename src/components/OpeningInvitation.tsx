@@ -63,6 +63,7 @@ function OpeningContent({
                     className={cn(
                         'absolute z-20 cursor-pointer',
                         'bottom-10 left-1/2 -translate-x-1/2',
+                        'flex flex-col items-center'
                     )}
                     animate={{ y: [0, -10, 0] }}
                     transition={{
@@ -72,6 +73,7 @@ function OpeningContent({
                         ease: 'easeInOut',
                     }}
                 >
+                    <p className="mb-2 text-white">Click Here</p>
                     <svg
                         className="h-10 w-10 text-white"
                         fill="none"
