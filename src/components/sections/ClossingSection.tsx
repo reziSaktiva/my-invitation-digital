@@ -8,7 +8,7 @@ const closingData = {
     backgroundUrl: 'https://ik.imagekit.io/0yyvfumv6/gallery-6.jpeg',
     greeting: 'With Love and Gratitude',
     mainText:
-        'We are so grateful for your presence and blessings on our special day. Your support means the world to us as we begin our new journey together.',
+        'Kami sangat berterima kasih atas kehadiran dan doa restu Anda di hari istimewa kami. Dukungan Anda sangat berarti bagi kami saat kami memulai perjalanan baru bersama.',
     coupleName: 'Rezi & Pracilia',
 };
 
