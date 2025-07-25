@@ -14,17 +14,17 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-90',
-        width: 1200,
-        height: 630,
-        alt: 'Rezi & Pracilia Pre-wedding Photo',
-      },
-      {
         url: 'https://ik.imagekit.io/0yyvfumv6/gallery-16.jpeg?tr=w-1200,h-630,fo-auto,q-90',
         width: 1200,
         height: 630,
         alt: 'Rezi & Pracilia Pre-wedding Photo',
       },
+      {
+        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-90',
+        width: 1200,
+        height: 630,
+        alt: 'Rezi & Pracilia Pre-wedding Photo',
+      }
     ],
     locale: 'en_US',
     alternateLocale: 'id_ID',
