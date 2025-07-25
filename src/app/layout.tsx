@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-16.jpeg?tr=w-1200,h-630,fo-auto,q-90',
+        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-16.jpeg?tr=w-1200,h-630,fo-auto,q-95,e-sharpen,f-webp',
         width: 1200,
         height: 630,
         alt: 'Rezi & Pracilia Pre-wedding Photo',
       },
       {
-        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-90',
+        url: 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-95,e-sharpen,f-webp',
         width: 1200,
         height: 630,
         alt: 'Rezi & Pracilia Pre-wedding Photo',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: 'The Wedding of Rezi & Pracilia',
     description:
       "You're invited! Join Rezi & Pracilia as they celebrate the beginning of their forever.",
-    images: ['https://ik.imagekit.io/0yyvfumv6/gallery-16.jpeg?tr=w-1200,h-630,fo-auto,q-90', 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-90'],
+    images: ['https://ik.imagekit.io/0yyvfumv6/gallery-16.jpeg?tr=w-1200,h-630,fo-auto,q-95,e-sharpen,f-webp', 'https://ik.imagekit.io/0yyvfumv6/gallery-8.jpeg?tr=w-1200,h-630,fo-auto,q-95,e-sharpen,f-webp'],
   },
   icons: {
     icon: '/icons/rp-logo.svg',
