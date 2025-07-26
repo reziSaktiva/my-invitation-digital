@@ -10,7 +10,7 @@ const luckiestGuy = Luckiest_Guy({
 
 export const metadata: Metadata = {
   title: "Rezi & Pracilia Wedding",
-  description: "You're invited! Join Rezi & Pracilia on August 8, 2025, as they celebrate the beginning of their forever. Discover their love story and find all the details for their special day.",
+  description: "You're invited! Join Rezi & Pracilia on August 2, 2025, as they celebrate the beginning of their forever. Discover their love story and find all the details for their special day.",
   openGraph: {
     images: [
       {
