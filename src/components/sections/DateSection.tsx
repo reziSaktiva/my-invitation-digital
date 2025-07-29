@@ -9,7 +9,7 @@ interface TimeLeft {
     seconds: number;
 }
 
-const weddingDate = '2025-08-02T00:00:00';
+const weddingDate = '2025-08-02T08:00:00';
 
 const DateSection: React.FC = () => {
     const formattedWeddingDate = new Intl.DateTimeFormat('id-ID', {
